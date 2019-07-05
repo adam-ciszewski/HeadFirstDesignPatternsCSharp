@@ -2,6 +2,9 @@
 {
     public abstract class Beverage
     {
-        public string Description { get; set; }
+        public string Description = "Unknown Beverage";
+
+        public virtual string GetDescription() => Description;
+        public abstract double Cost();
     }
 }

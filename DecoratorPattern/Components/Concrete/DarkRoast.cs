@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace DecoratorPattern.Components.Concrete
 {
-    public class DarkRoast
+    public class DarkRoast : Beverage
     {
-        
+        public DarkRoast()
+        {
+            Description = "Dark Roast";
+        }
+        public override double Cost()
+        {
+            return 0.99;
+        }
     }
 }

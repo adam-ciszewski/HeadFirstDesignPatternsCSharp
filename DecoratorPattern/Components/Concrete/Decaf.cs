@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace DecoratorPattern.Components.Concrete
 {
-    public class Decaf
+    public class Decaf : Beverage
     {
-        
+        public Decaf()
+        {
+            Description = "Decaf coffee";
+        }
+        public override double Cost()
+        {
+            return 1.05;
+        }
     }
 }
