@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyPattern.DuckSim", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{AD229009-8E3F-4599-9A7D-8FC90F205BC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "FactoryPattern\FactoryPattern.csproj", "{8C5DB422-AD6D-47BE-BB08-1EB7CB32E99A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AD229009-8E3F-4599-9A7D-8FC90F205BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD229009-8E3F-4599-9A7D-8FC90F205BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD229009-8E3F-4599-9A7D-8FC90F205BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5DB422-AD6D-47BE-BB08-1EB7CB32E99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5DB422-AD6D-47BE-BB08-1EB7CB32E99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5DB422-AD6D-47BE-BB08-1EB7CB32E99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5DB422-AD6D-47BE-BB08-1EB7CB32E99A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
