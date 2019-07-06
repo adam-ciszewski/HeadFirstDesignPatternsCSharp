@@ -8,13 +8,24 @@ namespace DecoratorPattern.Components.Concrete
 {
     public class Espresso : Beverage
     {
-        public Espresso()
+        public Espresso(Size size)
         {
             Description = "Espresso";
+            SetSize(size);
         }
         public override double Cost()
         {
-            return 1.99;
+            switch (GetSize())
+            {
+                case Size.Grande:
+                    return 1.99;
+                case Size.Tall:
+                    return 1.59;
+                case Size.Venti:
+                    return 1.49;
+                default:
+                    return 1.49;
+            }
         }
     }
 }

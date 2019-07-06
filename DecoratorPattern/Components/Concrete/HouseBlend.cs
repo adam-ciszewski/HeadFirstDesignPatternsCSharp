@@ -8,13 +8,24 @@ namespace DecoratorPattern.Components.Concrete
 {
     public class HouseBlend : Beverage
     {
-        public HouseBlend()
+        public HouseBlend(Size size)
         {
             Description = "House Blend Coffee";
+            Size = size;
         }
         public override double Cost()
         {
-            return 0.89;
+            switch (GetSize())
+            {
+                case Size.Grande:
+                    return 0.89;
+                case Size.Tall:
+                    return 0.79;
+                case Size.Venti:
+                    return 0.69;
+                default:
+                    return 0.69;
+            }
         }
     }
 }

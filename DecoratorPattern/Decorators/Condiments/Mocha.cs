@@ -7,7 +7,7 @@ using DecoratorPattern.Components;
 
 namespace DecoratorPattern.Decorators.Condiments
 {
-    public class Mocha : CondimentDecorator
+    public class Mocha : Beverage, ICondimentDecorator
     {
         private readonly Beverage _beverage;
 
@@ -23,7 +23,17 @@ namespace DecoratorPattern.Decorators.Condiments
 
         public override double Cost()
         {
-            return _beverage.Cost() + .20;
+            switch (_beverage.Size)
+            {
+                case Size.Grande:
+                    return _beverage.Cost() + 0.30;
+                case Size.Tall:
+                    return _beverage.Cost() + 0.25;
+                case Size.Venti:
+                    return _beverage.Cost() + 0.20;
+                default:
+                    return _beverage.Cost() + 0.20;
+            }
         }
     }
 }
