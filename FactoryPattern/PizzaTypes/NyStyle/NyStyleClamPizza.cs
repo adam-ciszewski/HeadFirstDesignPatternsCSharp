@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryPattern.Entities
+namespace FactoryPattern.PizzaTypes.NyStyle
 {
-    public class ClamPizza : Pizza
+    public class NyStyleClamPizza : Pizza
     {
         
     }
