@@ -3,29 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DecoratorPattern.Decorators;
 
 namespace DecoratorPattern.Components.Concrete
 {
     public class DarkRoast : Beverage
     {
-        public DarkRoast(Size size)
+        public DarkRoast()
         {
             Description = "Dark Roast";
-            Size = size;
         }
         public override double Cost()
         {
-            switch (GetSize())
-            {
-                case Size.Grande:
-                    return 1.09;
-                case Size.Tall:
-                    return 0.99;
-                case Size.Venti:
-                    return 0.89;
-                default:
-                    return 0.89;
-            }
+            return 1.99;
         }
     }
 }

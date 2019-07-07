@@ -23,17 +23,7 @@ namespace DecoratorPattern.Decorators.Condiments
 
         public override double Cost()
         {
-            switch (_beverage.Size)
-            {
-                case Size.Grande:
-                    return _beverage.Cost() + 0.25;
-                case Size.Tall:
-                    return _beverage.Cost() + 0.20;
-                case Size.Venti:
-                    return _beverage.Cost() + 0.15;
-                default:
-                    return _beverage.Cost() + 0.15;
-            }
+            return _beverage.Cost() + 0.15;
         }
     }
 }

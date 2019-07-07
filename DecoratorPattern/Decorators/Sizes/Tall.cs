@@ -5,25 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using DecoratorPattern.Components;
 
-namespace DecoratorPattern.Decorators.Condiments
+namespace DecoratorPattern.Decorators.Sizes
 {
-    public class Whip : Beverage, ICondimentDecorator
+    public class Tall : Beverage, ISizeDecorator
     {
         private Beverage _beverage;
 
-        public Whip(Beverage beverage)
+        public Tall(Beverage beverage)
         {
             _beverage = beverage;
         }
-
         public override string GetDescription()
         {
-            return _beverage.GetDescription() + ", Whip";
+            return _beverage.GetDescription() + " Tall";
         }
 
         public override double Cost()
         {
-            return _beverage.Cost() + 0.10;
+            return _beverage.Cost() * 0.30;
         }
     }
 }
