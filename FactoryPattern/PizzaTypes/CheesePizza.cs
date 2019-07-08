@@ -1,7 +1,7 @@
 ﻿using System;
 using FactoryPattern.Ingredients;
 
-namespace FactoryPattern.PizzaTypes.Regular
+namespace FactoryPattern.PizzaTypes
 {
     public class CheesePizza : Pizza
     {

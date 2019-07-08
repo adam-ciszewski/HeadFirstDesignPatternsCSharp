@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using FactoryPattern.PizzaTypes.Regular;
 
 namespace FactoryPattern.PizzaTypes
 {

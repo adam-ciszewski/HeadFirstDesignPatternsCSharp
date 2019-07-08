@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using FactoryPattern.Ingredients.Factories;
 using FactoryPattern.PizzaTypes;
 using FactoryPattern.PizzaTypes.NyStyle;
-using FactoryPattern.PizzaTypes.Regular;
 
 namespace FactoryPattern.PizzaStore
 {
@@ -41,7 +40,6 @@ namespace FactoryPattern.PizzaStore
                 default:
                     pizza = null;
                     break;
-
             }
 
             return pizza;

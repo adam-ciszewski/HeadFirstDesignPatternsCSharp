@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FactoryPattern.Ingredients.Factories;
 using FactoryPattern.PizzaTypes;
 using FactoryPattern.PizzaTypes.ChicagoStyle;
 
@@ -12,19 +13,37 @@ namespace FactoryPattern.PizzaStore
     {
         protected override Pizza CreatePizza(string type)
         {
+            Pizza pizza;
+            var ingredientFactory = new ChicagoPizzaIngredientFactory();
+
             switch (type)
             {
                 case "cheese":
-                    return new ChicagoStyleCheesePizza();
+                    pizza = new CheesePizza(ingredientFactory);
+                    pizza.SetName("New York Style Cheese Pizza");
+                    break;
+
                 case "clam":
-                    return new ChicagoStyleClamPizza();
+                    pizza = new ClamPizza(ingredientFactory);
+                    pizza.SetName("New York Style Clam Pizza");
+                    break;
+
                 case "veggie":
-                    return new ChicagoStyleVeggiePizza();
+                    pizza = new VeggiePizza(ingredientFactory);
+                    pizza.SetName("New York Style Veggie Pizza");
+                    break;
+
                 case "pepperoni":
-                    return new ChicagoStylePepperoniPizza();
+                    pizza = new PepperoniPizza(ingredientFactory);
+                    pizza.SetName("New York Style Pepperoni Pizza");
+                    break;
                 default:
-                    return null;
+                    pizza = null;
+                    break;
             }
+
+            return pizza;
         }
+    }
     }
 }

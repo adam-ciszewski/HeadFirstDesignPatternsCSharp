@@ -1,16 +1,17 @@
 ﻿using System;
 using FactoryPattern.Ingredients;
 
-namespace FactoryPattern.PizzaTypes.Regular
+namespace FactoryPattern.PizzaTypes
 {
-    public class VeggiePizza : Pizza
+    public class ClamPizza : Pizza
     {
-        private readonly IPizzaIngredientFactory _ingredientFactory;
+        private IPizzaIngredientFactory _ingredientFactory;
 
-        public VeggiePizza(IPizzaIngredientFactory ingredientFactory)
+        public ClamPizza(IPizzaIngredientFactory ingredientFactory)
         {
             _ingredientFactory = ingredientFactory;
         }
+
 
         public override void Prepare()
         {
@@ -18,7 +19,7 @@ namespace FactoryPattern.PizzaTypes.Regular
             Dough = _ingredientFactory.CreateDough();
             Sauce = _ingredientFactory.CreateSauce();
             Cheese = _ingredientFactory.CreateCheese();
-            Veggies = _ingredientFactory.CreateVeggies();
+            Clam = _ingredientFactory.CreateClams();
         }
     }
 }
