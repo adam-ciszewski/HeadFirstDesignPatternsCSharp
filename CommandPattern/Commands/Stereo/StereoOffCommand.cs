@@ -21,5 +21,10 @@ namespace CommandPattern.Commands.Stereo
         {
             _stereo.Off();
         }
+
+        public void Undo()
+        {
+            _stereo.On();
+        }
     }
 }

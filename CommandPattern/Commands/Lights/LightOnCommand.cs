@@ -16,5 +16,10 @@ namespace CommandPattern.Commands.Lights
         {
             _light.On();
         }
+
+        public void Undo()
+        {
+            _light.Off();
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,12 @@ using CommandPattern.Vendors;
 
 namespace CommandPattern.Commands.CeilingFan
 {
-    public class CeilingFanOffCommand : ICommand
+    public class CeilingFanLowCommand : ICommand
     {
+        private readonly Stack<FanSpeed> _speedStack;
         private readonly Vendors.CeilingFan _ceilingFan;
-        private  Stack<FanSpeed> _speedStack;
 
-        public CeilingFanOffCommand(Vendors.CeilingFan ceilingFan)
+        public CeilingFanLowCommand(Vendors.CeilingFan ceilingFan)
         {
             _ceilingFan = ceilingFan;
             _speedStack = _ceilingFan.SpeedStack;
@@ -22,7 +23,7 @@ namespace CommandPattern.Commands.CeilingFan
         public void Execute()
         {
             _speedStack.Push(_ceilingFan.GetSpeed());
-            _ceilingFan.Off();
+            _ceilingFan.Low();
         }
 
         public void Undo()

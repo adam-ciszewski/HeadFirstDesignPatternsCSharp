@@ -22,5 +22,10 @@ namespace CommandPattern.Commands.Stereo
             _stereo.SetCd();
             _stereo.SetVolume(11);
         }
+
+        public void Undo()
+        {
+            _stereo.Off();
+        }
     }
 }
