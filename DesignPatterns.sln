@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverPattern.Net", "ObserverPattern\ObserverPattern.Net.csproj", "{A983DD1E-766C-46C0-BD6B-49B9B89C37DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverPattern", "ObserverPattern\ObserverPattern.csproj", "{A983DD1E-766C-46C0-BD6B-49B9B89C37DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyPattern.DuckSim", "StrategyPattern\StrategyPattern.DuckSim.csproj", "{9BE3F6A4-FD6E-436B-B874-D4C4DC336398}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{9BE3F6A4-FD6E-436B-B874-D4C4DC336398}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{AD229009-8E3F-4599-9A7D-8FC90F205BC3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryPattern", "FactoryPattern\FactoryPattern.csproj", "{8C5DB422-AD6D-47BE-BB08-1EB7CB32E99A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "SingletonPattern\SingletonPattern.csproj", "{A7D9CEB7-46C9-4754-9D30-9A7C64884520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonPattern", "SingletonPattern\SingletonPattern.csproj", "{A7D9CEB7-46C9-4754-9D30-9A7C64884520}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{04771688-EEE7-4056-8CFF-C93B4CB2D5F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{04771688-EEE7-4056-8CFF-C93B4CB2D5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{369ACE59-D3C4-4DE9-85A3-5F5F2AFB4004}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{04771688-EEE7-4056-8CFF-C93B4CB2D5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04771688-EEE7-4056-8CFF-C93B4CB2D5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04771688-EEE7-4056-8CFF-C93B4CB2D5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{369ACE59-D3C4-4DE9-85A3-5F5F2AFB4004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{369ACE59-D3C4-4DE9-85A3-5F5F2AFB4004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{369ACE59-D3C4-4DE9-85A3-5F5F2AFB4004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369ACE59-D3C4-4DE9-85A3-5F5F2AFB4004}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
