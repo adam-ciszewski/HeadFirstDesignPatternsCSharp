@@ -5,7 +5,7 @@ namespace FactoryPattern.PizzaTypes
 {
     public class ClamPizza : Pizza
     {
-        private IPizzaIngredientFactory _ingredientFactory;
+        private readonly IPizzaIngredientFactory _ingredientFactory;
 
         public ClamPizza(IPizzaIngredientFactory ingredientFactory)
         {

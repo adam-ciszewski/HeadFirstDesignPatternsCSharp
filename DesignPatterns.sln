@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonPattern", "Singlet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{04771688-EEE7-4056-8CFF-C93B4CB2D5F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{369ACE59-D3C4-4DE9-85A3-5F5F2AFB4004}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{369ACE59-D3C4-4DE9-85A3-5F5F2AFB4004}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacadePattern", "FacadePattern\FacadePattern.csproj", "{20091420-6E8D-4CA6-9A83-1B5019B6FE17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodPattern", "TemplateMethodPattern\TemplateMethodPattern.csproj", "{03EC2D67-5C0D-4738-8372-9920DD057288}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{369ACE59-D3C4-4DE9-85A3-5F5F2AFB4004}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{369ACE59-D3C4-4DE9-85A3-5F5F2AFB4004}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{369ACE59-D3C4-4DE9-85A3-5F5F2AFB4004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20091420-6E8D-4CA6-9A83-1B5019B6FE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20091420-6E8D-4CA6-9A83-1B5019B6FE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20091420-6E8D-4CA6-9A83-1B5019B6FE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20091420-6E8D-4CA6-9A83-1B5019B6FE17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03EC2D67-5C0D-4738-8372-9920DD057288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03EC2D67-5C0D-4738-8372-9920DD057288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03EC2D67-5C0D-4738-8372-9920DD057288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03EC2D67-5C0D-4738-8372-9920DD057288}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

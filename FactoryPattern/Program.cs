@@ -3,9 +3,9 @@ using FactoryPattern.PizzaStore;
 
 namespace FactoryPattern
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var nyStore = new NyStylePizzaStore();
             var chicagoStore = new ChicagoStylePizzaStore();

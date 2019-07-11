@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using FactoryPattern.Ingredients.Concrete;
 
 namespace FactoryPattern.Ingredients.Factories
 {
@@ -10,36 +7,32 @@ namespace FactoryPattern.Ingredients.Factories
     {
         public Dough CreateDough()
         {
-            return new ThickCrustDough();
+            return new Dough();
         }
 
         public Sauce CreateSauce()
         {
-            return new PlumTomatoSouce();
+            return new Sauce();
         }
 
         public Cheese CreateCheese()
         {
-            return new MozzarellaCheese();
+            return new Cheese();
         }
 
         public List<Veggies> CreateVeggies()
         {
-            return new List<Veggies>(
-                new EggPlant(),
-                new Spinach(),
-                new BlackOlives());
+            return new List<Veggies>();
         }
 
         public Pepperoni CreatePepperoni()
         {
-            return new SlicedPepperoni();
+            return new Pepperoni();
         }
 
         public Clams CreateClams()
         {
-            return new FrozenClams();
+            return new Clams();
         }
     }
-}
 }

@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FactoryPattern.Ingredients.Factories;
+﻿using FactoryPattern.Ingredients.Factories;
 using FactoryPattern.PizzaTypes;
-using FactoryPattern.PizzaTypes.ChicagoStyle;
 
 namespace FactoryPattern.PizzaStore
 {
@@ -44,6 +38,5 @@ namespace FactoryPattern.PizzaStore
 
             return pizza;
         }
-    }
     }
 }

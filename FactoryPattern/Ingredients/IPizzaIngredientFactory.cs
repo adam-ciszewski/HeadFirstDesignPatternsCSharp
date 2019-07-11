@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using FactoryPattern.Ingredients.Concrete;
 
 namespace FactoryPattern.Ingredients
 {
     public interface IPizzaIngredientFactory
     {
-        public Dough CreateDough();
-        public Sauce CreateSauce();
-        public Cheese CreateCheese();
-        public List<Veggies> CreateVeggies();
-        public Pepperoni CreatePepperoni();
-        public Clams CreateClams();
+        Dough CreateDough();
+        Sauce CreateSauce();
+        Cheese CreateCheese();
+        List<Veggies> CreateVeggies();
+        Pepperoni CreatePepperoni();
+        Clams CreateClams();
     }
 }
