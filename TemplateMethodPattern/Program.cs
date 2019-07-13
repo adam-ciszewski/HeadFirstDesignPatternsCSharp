@@ -1,4 +1,5 @@
 ﻿using System;
+using TemplateMethodPattern.Algorithms;
 
 namespace TemplateMethodPattern
 {
@@ -6,6 +7,14 @@ namespace TemplateMethodPattern
     {
         static void Main(string[] args)
         {
+            var teaWithHook = new TeaWithHook();
+            var coffeeWithHook = new CoffeeWithHook();
+
+            Console.WriteLine("\nMaking tea...");
+            teaWithHook.PrepareRecipe();
+
+            Console.WriteLine("\nMaking coffee...");
+            coffeeWithHook.PrepareRecipe();
         }
     }
 }

@@ -9,7 +9,15 @@ namespace TemplateMethodPattern
             BoilWater();
             Brew();
             PourInCup();
-            AddCondiments();
+            if (CustomerWantsCondiments())
+            {
+                AddCondiments();
+            }
+        }
+
+        public virtual bool CustomerWantsCondiments()
+        {
+            return true;
         }
 
         public void BoilWater()
