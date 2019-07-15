@@ -4,11 +4,11 @@ namespace IteratorPattern
 {
     public class PancakeHouseMenu
     {
-        public List<MenuItem> MenuItems { get; }
+        private readonly List<MenuItem> _menuItems;
 
         public PancakeHouseMenu()
         {
-            MenuItems = new List<MenuItem>();
+            _menuItems = new List<MenuItem>();
 
             AddItem("K&B's Pancake Breakfast",
                 "Pancakes with scrambled eggs, and toast",
@@ -33,7 +33,12 @@ namespace IteratorPattern
 
         private void AddItem(string name, string description, bool vegetarian, double price)
         {
-            MenuItems.Add(new MenuItem(name, description, vegetarian, price));
+            _menuItems.Add(new MenuItem(name, description, vegetarian, price));
+        }
+
+        public IIterator<MenuItem> CreateIterator()
+        {
+            return new PancakeHouseMenuIterator(_menuItems);
         }
     }
 }

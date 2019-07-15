@@ -6,7 +6,12 @@ namespace IteratorPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var pancakeMenu = new PancakeHouseMenu();
+            var dinnerMenu = new DinnerMenu();
+
+            var  waitress = new Waitress(pancakeMenu, dinnerMenu);
+
+            waitress.PrintMenu();
         }
     }
 }
