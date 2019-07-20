@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IteratorPattern
+namespace CompositePattern
 {
     public class DinnerMenu
     {
